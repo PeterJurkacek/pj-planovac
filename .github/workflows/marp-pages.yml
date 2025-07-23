@@ -1,4 +1,4 @@
-name: Deploy marp site to Pages
+name: Deploy static HTML site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -26,43 +26,101 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Copy images and themes
-        run: mkdir build && cp -R slides/img build/img && cp -R slides/themes build/themes
+      
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          
+      - name: Create build directory and copy assets
+        run: |
+          mkdir -p build
+          if [ -d "slides/img" ]; then cp -R slides/img build/; fi
+          if [ -d "slides/themes" ]; then cp -R slides/themes build/; fi
 
-      - name: Marp Build (All slides)
-        uses: docker://marpteam/marp-cli:latest
-        with:
-          args: --html --theme-set slides/themes --output build/ slides/*.md
-        env:
-          MARP_USER: root:root
+      - name: Convert markdown to HTML
+        run: |
+          for md_file in slides/*.md; do
+            if [ -f "$md_file" ]; then
+              filename=$(basename "$md_file" .md)
+              pandoc "$md_file" \
+                --from markdown \
+                --to html5 \
+                --standalone \
+                --self-contained \
+                --css slides/themes/custom.css \
+                --metadata title="$filename" \
+                --output "build/$filename.html"
+              echo "Converted $md_file to build/$filename.html"
+            fi
+          done
           
       - name: Create index page
         run: |
           echo '<!DOCTYPE html>
-          <html>
+          <html lang="en">
           <head>
-            <title>Marp Slides</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Static HTML Pages</title>
             <style>
-              body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-              h1 { color: #333; }
-              ul { list-style-type: none; padding: 0; }
-              li { margin: 10px 0; }
-              a { display: block; padding: 15px; background: #f5f5f5; text-decoration: none; color: #333; border-radius: 5px; }
-              a:hover { background: #e0e0e0; }
+              body { 
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                max-width: 800px; 
+                margin: 0 auto; 
+                padding: 40px 20px;
+                line-height: 1.6;
+                color: #333;
+              }
+              h1 { 
+                color: #2c3e50; 
+                border-bottom: 3px solid #3498db;
+                padding-bottom: 10px;
+              }
+              .page-list { 
+                list-style: none; 
+                padding: 0; 
+              }
+              .page-item { 
+                margin: 15px 0; 
+              }
+              .page-link { 
+                display: block; 
+                padding: 20px; 
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                text-decoration: none; 
+                color: white; 
+                border-radius: 8px;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                font-weight: 500;
+              }
+              .page-link:hover { 
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+              }
+              .footer {
+                margin-top: 40px;
+                text-align: center;
+                color: #7f8c8d;
+                font-size: 14px;
+              }
             </style>
           </head>
           <body>
-            <h1>Dostupné prezentácie</h1>
-            <ul>' > build/index.html
+            <h1>📄 Available Pages</h1>
+            <ul class="page-list">' > build/index.html
           
           for file in build/*.html; do
             if [ "$(basename "$file")" != "index.html" ]; then
               filename=$(basename "$file" .html)
-              echo "              <li><a href=\"$(basename "$file")\">$filename</a></li>" >> build/index.html
+              echo "              <li class=\"page-item\"><a href=\"$(basename "$file")\" class=\"page-link\">📖 $filename</a></li>" >> build/index.html
             fi
           done
           
           echo '            </ul>
+            <div class="footer">
+              <p>Generated with pandoc • Updated: '"$(date)"'</p>
+            </div>
           </body>
           </html>' >> build/index.html
           
@@ -71,7 +129,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: 'build'
       - name: Deploy to GitHub Pages
         id: deployment
