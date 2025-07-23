@@ -48,7 +48,7 @@ jobs:
                 --to html5 \
                 --standalone \
                 --self-contained \
-                --css slides/themes/custom.css \
+                --css slides/themes/gaia-inspired.css \
                 --metadata title="$filename" \
                 --output "build/$filename.html"
               echo "Converted $md_file to build/$filename.html"

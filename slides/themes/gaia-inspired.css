@@ -1,0 +1,430 @@
+/* Gaia-Inspired Theme for Pandoc HTML */
+/* Based on the beautiful Marp Gaia theme design principles */
+
+:root {
+  /* Gaia color palette */
+  --gaia-primary: #246;
+  --gaia-secondary: #48c;
+  --gaia-accent: #09c;
+  --gaia-text: #246;
+  --gaia-text-light: #69c;
+  --gaia-background: #fff;
+  --gaia-background-alt: #fafafa;
+  --gaia-border: #e1e8ed;
+  --gaia-code-bg: #f6f8fa;
+  --gaia-shadow: 0 2px 8px rgba(36, 68, 102, 0.1);
+  
+  /* Typography scale */
+  --gaia-font-family: 'Avenir Next', 'Avenir', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --gaia-font-mono: 'SF Mono', 'Roboto Mono', 'Consolas', monospace;
+  --gaia-line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--gaia-font-family);
+  font-size: 18px;
+  line-height: var(--gaia-line-height);
+  color: var(--gaia-text);
+  background-color: var(--gaia-background);
+  margin: 0;
+  padding: 60px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+/* Gaia Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gaia-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 2em 0 1em 0;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--gaia-primary);
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--gaia-secondary);
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: var(--gaia-accent);
+  margin-top: 1.25em;
+}
+
+h4 {
+  font-size: 1.4em;
+  color: var(--gaia-text);
+}
+
+h5, h6 {
+  font-size: 1.2em;
+  color: var(--gaia-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* Paragraphs and text styling */
+p {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  line-height: var(--gaia-line-height);
+}
+
+/* Emphasis and strong */
+strong, b {
+  font-weight: 700;
+  color: var(--gaia-primary);
+}
+
+em, i {
+  font-style: italic;
+  color: var(--gaia-text-light);
+}
+
+/* Links with Gaia styling */
+a {
+  color: var(--gaia-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  border-bottom-color: var(--gaia-accent);
+  color: var(--gaia-secondary);
+  background-color: rgba(68, 136, 204, 0.05);
+  padding: 0.1em 0.2em;
+  margin: -0.1em -0.2em;
+  border-radius: 2px;
+}
+
+/* Lists with Gaia spacing */
+ul, ol {
+  margin: 1.5em 0;
+  padding-left: 2em;
+  line-height: var(--gaia-line-height);
+}
+
+li {
+  margin-bottom: 0.75em;
+}
+
+ul li::marker {
+  color: var(--gaia-accent);
+}
+
+ol li::marker {
+  color: var(--gaia-secondary);
+  font-weight: 600;
+}
+
+/* Code styling inspired by Gaia */
+code {
+  font-family: var(--gaia-font-mono);
+  font-size: 0.85em;
+  background-color: var(--gaia-code-bg);
+  color: var(--gaia-primary);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  border: 1px solid var(--gaia-border);
+}
+
+pre {
+  font-family: var(--gaia-font-mono);
+  font-size: 0.9em;
+  background-color: var(--gaia-code-bg);
+  color: var(--gaia-text);
+  padding: 1.5em;
+  border-radius: 8px;
+  border: 1px solid var(--gaia-border);
+  overflow-x: auto;
+  margin: 2em 0;
+  line-height: 1.4;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Blockquotes with Gaia accent */
+blockquote {
+  font-size: 1.1em;
+  font-style: italic;
+  color: var(--gaia-text-light);
+  border-left: 4px solid var(--gaia-accent);
+  margin: 2em 0;
+  padding: 1em 1.5em;
+  background-color: var(--gaia-background-alt);
+  border-radius: 0 4px 4px 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tables with Gaia styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: 0.95em;
+  background-color: var(--gaia-background);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--gaia-shadow);
+}
+
+th {
+  background-color: var(--gaia-primary);
+  color: white;
+  font-weight: 600;
+  padding: 1em;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+td {
+  padding: 1em;
+  border-bottom: 1px solid var(--gaia-border);
+}
+
+tr:nth-child(even) {
+  background-color: var(--gaia-background-alt);
+}
+
+tr:hover {
+  background-color: rgba(68, 136, 204, 0.05);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2em 0;
+  box-shadow: var(--gaia-shadow);
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gaia-accent), var(--gaia-secondary));
+  margin: 3em 0;
+  border-radius: 1px;
+}
+
+/* Responsive design */
+
+/* Tablet optimization */
+@media (max-width: 1024px) {
+  body {
+    padding: 40px 30px;
+    font-size: 17px;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.2em;
+  }
+  
+  h3 {
+    font-size: 1.6em;
+  }
+}
+
+/* Mobile optimization - smaller text sizes */
+@media (max-width: 768px) {
+  body {
+    padding: 30px 15px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    margin-top: 1em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+  }
+  
+  h5, h6 {
+    font-size: 1.1em;
+  }
+  
+  p {
+    margin-bottom: 1.2em;
+  }
+  
+  ul, ol {
+    padding-left: 1.5em;
+    margin: 1.2em 0;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  pre {
+    padding: 1em;
+    font-size: 0.8em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+  }
+  
+  code {
+    font-size: 0.8em;
+    padding: 0.1em 0.3em;
+  }
+  
+  blockquote {
+    font-size: 1em;
+    padding: 0.8em 1.2em;
+    margin: 1.5em 0;
+  }
+  
+  table {
+    font-size: 0.8em;
+    margin: 1.5em 0;
+  }
+  
+  th, td {
+    padding: 0.6em;
+  }
+  
+  img {
+    margin: 1.5em 0;
+    border-radius: 6px;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.9em;
+    margin-bottom: 0.7em;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  h4 {
+    font-size: 1.15em;
+  }
+  
+  pre {
+    font-size: 0.75em;
+    padding: 0.8em;
+    overflow-x: scroll;
+  }
+  
+  table {
+    font-size: 0.75em;
+  }
+  
+  th, td {
+    padding: 0.5em;
+  }
+  
+  ul, ol {
+    padding-left: 1.2em;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12pt;
+    padding: 0;
+    max-width: none;
+    color: #000;
+  }
+  
+  h1, h2, h3 {
+    color: #000;
+    page-break-after: avoid;
+  }
+  
+  pre, blockquote {
+    page-break-inside: avoid;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  img {
+    box-shadow: none;
+  }
+}
+
+/* Dark mode adaptation */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gaia-primary: #7bb3f0;
+    --gaia-secondary: #9ac7f4;
+    --gaia-accent: #64b5f6;
+    --gaia-text: #e1e8ed;
+    --gaia-text-light: #9ac7f4;
+    --gaia-background: #1a1a2e;
+    --gaia-background-alt: #16213e;
+    --gaia-border: #2a3f5f;
+    --gaia-code-bg: #16213e;
+  }
+  
+  th {
+    background-color: var(--gaia-primary);
+    color: var(--gaia-background);
+  }
+} 
