@@ -26,15 +26,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Copy images
+      - name: Copy images and themes
         run: mkdir build && cp -R slides/img build/img && cp -R slides/themes build/themes
 
-      - name: Marp Build (README)
+      - name: Marp Build (All slides)
         uses: docker://marpteam/marp-cli:latest
         with:
-          args: --theme-set slides/themes -s ./slides
+          args: --html --theme-set slides/themes --output build/ slides/*.md
         env:
           MARP_USER: root:root
+          
+      - name: Create index page
+        run: |
+          echo '<!DOCTYPE html>
+          <html>
+          <head>
+            <title>Marp Slides</title>
+            <style>
+              body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+              h1 { color: #333; }
+              ul { list-style-type: none; padding: 0; }
+              li { margin: 10px 0; }
+              a { display: block; padding: 15px; background: #f5f5f5; text-decoration: none; color: #333; border-radius: 5px; }
+              a:hover { background: #e0e0e0; }
+            </style>
+          </head>
+          <body>
+            <h1>Dostupné prezentácie</h1>
+            <ul>' > build/index.html
+          
+          for file in build/*.html; do
+            if [ "$(basename "$file")" != "index.html" ]; then
+              filename=$(basename "$file" .html)
+              echo "              <li><a href=\"$(basename "$file")\">$filename</a></li>" >> build/index.html
+            fi
+          done
+          
+          echo '            </ul>
+          </body>
+          </html>' >> build/index.html
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
