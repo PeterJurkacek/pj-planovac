@@ -37,9 +37,9 @@ description: 23 dní v Soule a Busane | 4.11. - 27.11.2025
 
 | WHERE      | CHECKIN             | CHECKOUT        | DURATION      |PRICE|
 | --------- | ---------------- | --------- | ---------------- | ------------- |
-[Soul, Social Guesthouse Pajama Party,  Higher Double Room](https://www.booking.com/hotel/kr/social-guesthouse-pajama-party.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaM0BiAEBmAEJuAEHyAEN2AEB6AEB&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=186761320_415005269_0_0_0&checkin=2025-11-04&checkout=2025-11-16&dest_id=-716583&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=186761320_415005269_0_0_0&hpos=1&matching_block_id=186761320_415005269_0_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=186761320_415005269_0_0_0__118536364&srepoch=1753296757&srpvid=00f02a998efac72bcaf48089fb5d7b7e&type=total&ucfs=1&#RD186761317)      | 05.11.2025  | 16.11.2025 |  12 nocí      |€ 938
-|[Busan, Gemstay](https://www.booking.com/hotel/kr/jemseutei.en-gb.html?aid=304142&label=gen173nr-1FCAsofUIJamVtc2V1dGVpSCJYBGjNAYgBAZgBCbgBB8gBDNgBAegBAfgBDIgCAagCA7gCkcqExAbAAgHSAiRjOTIyZWY2NC05N2EyLTQ2YzItYmZlMS0zODI1MjIzZWYzNTPYAgbgAgE&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=1231783805_0_2_0_0&checkin=2025-11-16&checkout=2025-11-23&dest_id=-713900&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1231783805_0_2_0_0&hpos=1&matching_block_id=1231783805_0_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A,A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1231783805_0_2_0_0__49469146&srepoch=1753296649&srpvid=7390a6bee3a5339a41334da2d0a810e4&type=total&ucfs=1&#RD1231783801)    | 16.11.2025  | 23.11.2025 | 7 nocí      |€ 381
-|[Soul, Social Guesthouse Pajama Party, Studio - Split Level](https://www.booking.com/hotel/kr/social-guesthouse-pajama-party.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaM0BiAEBmAEJuAEHyAEN2AEB6AEB&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=186761335_415005269_2_0_0&checkin=2025-11-23&checkout=2025-11-27&dest_id=-716583&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=186761335_415005269_2_0_0&hpos=1&matching_block_id=186761335_415005269_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A,A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=186761335_415005269_2_0_0__32136364&srepoch=1753296719&srpvid=3f9d45ee538acf9eec9b9f011df4a745&type=total&ucfs=1&#RD186761317)    | 23.11.2025  | 27.11.2025 | 4 nocí      |€ 297
+[Soul, Social Guesthouse Pajama Party,  Higher Double Room](https://www.booking.com/hotel/kr/social-guesthouse-pajama-party.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaM0BiAEBmAEJuAEHyAEN2AEB6AEB&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=186761320_415005269_0_0_0&checkin=2025-11-04&checkout=2025-11-16&dest_id=-716583&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=186761320_415005269_0_0_0&hpos=1&matching_block_id=186761320_415005269_0_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=186761320_415005269_0_0_0__118536364&srepoch=1753296757&srpvid=00f02a998efac72bcaf48089fb5d7b7e&type=total&ucfs=1&#RD186761317)      | 05.11.2025  | 16.11.2025 |  12 nocí      |€ 783
+|[Busan, Gemstay](https://www.booking.com/hotel/kr/jemseutei.en-gb.html?aid=304142&label=gen173nr-1FCAsofUIJamVtc2V1dGVpSCJYBGjNAYgBAZgBCbgBB8gBDNgBAegBAfgBDIgCAagCA7gCkcqExAbAAgHSAiRjOTIyZWY2NC05N2EyLTQ2YzItYmZlMS0zODI1MjIzZWYzNTPYAgbgAgE&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=1231783805_0_2_0_0&checkin=2025-11-16&checkout=2025-11-23&dest_id=-713900&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1231783805_0_2_0_0&hpos=1&matching_block_id=1231783805_0_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A,A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1231783805_0_2_0_0__49469146&srepoch=1753296649&srpvid=7390a6bee3a5339a41334da2d0a810e4&type=total&ucfs=1&#RD1231783801)    | 16.11.2025  | 23.11.2025 | 7 nocí      |€ 343
+|[Soul, Social Guesthouse Pajama Party, Studio - Split Level](https://www.booking.com/hotel/kr/social-guesthouse-pajama-party.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaM0BiAEBmAEJuAEHyAEN2AEB6AEB&sid=ab5a4c94ad466347235a0197cf46717b&all_sr_blocks=186761335_415005269_2_0_0&checkin=2025-11-23&checkout=2025-11-27&dest_id=-716583&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=186761335_415005269_2_0_0&hpos=1&matching_block_id=186761335_415005269_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A,A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=186761335_415005269_2_0_0__32136364&srepoch=1753296719&srpvid=3f9d45ee538acf9eec9b9f011df4a745&type=total&ucfs=1&#RD186761317)    | 23.11.2025  | 27.11.2025 | 4 nocí      |€ 321
 
 **Celkové ubytovanie: € 1 616**
 
@@ -48,16 +48,16 @@ description: 23 dní v Soule a Busane | 4.11. - 27.11.2025
 ## 💰 Rozpočet pre 2 osoby (23 dní – Soul + Busan)
 
 | Položka                  | Skutočná cena (€) | Odhad ďalších (€/deň) |
-| ------------------------ | ----------------- | --------------------- |
+|:------------------------ |:-----------------:|:---------------------:|
 | ✈️ Letenky Etihad         | 1 353,44          | -                     |
-| 🏨 Ubytovanie (23 nocí)   | 1 616,00          | -                     |
+| 🏨 Ubytovanie (23 nocí)   | 1 447,00          | -                     |
 | 🍜 Jedlo a pitie          | -                 | 1400 (~60 €/deň)      |
 | 🚅 Doprava (vnútroštátna) | -                 | 300                   |
 | 💆 Wellness & SPA         | -                 | 350                   |
 | 🛍️ Nákupy + zásielky      | -                 | 400                   |
-| **Náklady**              | ~3000 €           | ~2350 €               |
+| **Náklady**              | ~2800,44 €           | ~2350 €               |
 
-**Celkové náklady 5450 €**
+**Celkové náklady ~5150 €**
 
 ---
 
