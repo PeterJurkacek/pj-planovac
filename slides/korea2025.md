@@ -1,6 +1,6 @@
 ---
-marp: false
-theme: default
+marp: true
+theme: custom-default
 paginate: true
 headingDivider: 1
 title: Dovolenka v Južnej Kórei – November 2025

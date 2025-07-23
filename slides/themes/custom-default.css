@@ -1,7 +1,57 @@
 /* custom-default.css */
-/* @theme custom-default */
 
-@import 'default';
+/** 
+* @theme custom-default 
+*/
+
+
+@import 'gaia';
+
+section {
+  width: 768px;
+  height: 1536px;
+  font-size: 22px; /* Zmenšené z defaultnej 25px */
+}
+
+/* Zmenšenie veľkosti nadpisov */
+section h1 {
+  font-size: 1.8em; /* Zmenšené z 2em */
+}
+
+section h2 {
+  font-size: 1.4em; /* Zmenšené z 1.6em */
+}
+
+section h3 {
+  font-size: 1.2em; /* Zmenšené z 1.3em */
+}
+
+/* Zmenšenie veľkosti tabuliek */
+section table {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
+section table th,
+section table td {
+  padding: 0.3em 0.6em; /* Zmenšené padding */
+}
+
+/* Zmenšenie veľkosti zoznamov */
+section ul, section ol {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+section li {
+  margin-bottom: 0.2em; /* Zmenšené z defaultnej hodnoty */
+}
+
+/* Kompaktnejšie odseky */
+section p {
+  line-height: 1.4; /* Zmenšené z 1.6 */
+  margin: 0.5em 0; /* Zmenšené z 1em 0 */
+}
 
 .columns {
   display: grid;
