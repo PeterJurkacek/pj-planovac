@@ -62,6 +62,7 @@ description: 23 dní v Soule a Busane | 4.11. - 27.11.2025
 ---
 
 ### 📝 **Pred začiatkom dovolenky:**
+- [ ] **K-ETA (Korea Electronic Travel Authorization)** - elektronické cestovné povolenie
 - [ ] T-money kartu + SIM kartu na ICN
 - [ ] Reservácie pre DMZ tour
 - [ ] Travel insurance
@@ -430,6 +431,7 @@ description: 23 dní v Soule a Busane | 4.11. - 27.11.2025
 ## 🔗 Užitočné zdroje
 
 ### 📱 **Appky**
+* **[K-ETA Mobile](https://www.k-eta.go.kr/portal/newapply/index.do)** - kontrola stavu K-ETA povolenia
 * **[Citymapper](https://citymapper.com)** - navigácia v Soule/Busane
 * **[Papago](https://papago.naver.com)** - prekladač (Naver)  
 * **[KakaoMap](https://map.kakao.com)** - lokálne mapy
@@ -446,6 +448,13 @@ description: 23 dní v Soule a Busane | 4.11. - 27.11.2025
 * **Hasiči:** 119  
 * **Medical emergency:** 119
 * **Tourist Hotline:** 1330 (24/7, multi-language)
+
+### 🛂 **K-ETA (Elektronické cestovné povolenie)**
+* **Web:** [k-eta.go.kr](https://www.k-eta.go.kr/portal/newapply/index.do)
+* **Cena:** $10 USD (platné 3 roky)
+* **Doba spracovania:** 72 hodín (odporúčame 1 týždeň vopred)
+* **Potrebné dokumenty:** pas platný min. 6 mesiacov, fotka, letenky
+* **Pre občanov EU:** povinné pre všetky turistické návštevy
 
 ### 💰 **Finančné tipy**
 * **Výmenné kurzy:** banks > airport > hotels
